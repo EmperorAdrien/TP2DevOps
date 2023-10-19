@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles_home.css' %}">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <title>AskTate</title>
+</head>
+<body>
+  <header>
+        <nav class="navbar navbar-expand-xl bg-body-tertiary fixed-top py-lg-3">
+          <div class="container-fluid">
+            <a class="navbar-brand " href="#hero">AskAStar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto sm-2 sm-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#pricings">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#meetuss">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#features">Features</a></li>
+                    <li><a class="dropdown-item" href="#pricings">Pricing</a></li>
+                    <li><a class="dropdown-item" href="#meetuss">About Us</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    
+      <section id="hero" class="animate__animated animate__fadeIn">
+        <h1>Welcome to AskTate</h1>
+        <p>How would Andrew solve your problem 🥷</p>
+        <div>
+          <a href="/chatbot"><button type="button" class="btn btn-outline-primary .btn-lg">TRY NOW</button></a>
+          <a href="/chatbot"></a><button type="button" class="btn btn-outline-secondary">LOGIN</button></a>
+        </div>
+      </section>
+
+        <section id="features">
+        <div class="container text-center">
+          <h2><u>Features</u></h2>
+          <div class="row gx-5">
+            <div class="col-md">
+              <div class="pricing">
+                <h3>Instant chat ⭐</h3>
+                <p>You have a problem or need advices from topG ? Just <a href="/chatbot">chat with him</a>.</p>
+              </div>
+            </div>
+            <div class="col-md ">
+              <div class="pricing">
+                <h3>Vocal answer 🔊</h3>
+                <p>Get a unique and exportable audio answers along with the reply.</p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="pricing">
+                <h3>Export your chat 📤</h3>
+                <p>Share your experience with friends or on social medias.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+      <section id="pricings">
+      <div class="container text-center">
+        <h2><u>Pricing</u></h2>
+        <br>
+        <div class="row gx-5">
+          <div class="col-md">
+            <div class="pricing">
+              <h3>FREE</h3>
+              <p>TRY NOW and ask one question to topG, you can't miss this opportunity..</p>
+            </div>
+          </div>
+          <div class="col-md ">
+            <div class="pricing">
+              <h3>2.99€/months</h3>
+              <p>Everything you need to talk with your favourite celebrity.</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="pricing">
+              <h3>9.99€/months</h3>
+              <p>Chat with all available celebrities and export chat and vocals as videos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section id="meetuss">
+        <div class="container">
+          <h2><u>About us</u></h2>
+          <div class="row">
+            <div class="col">
+              <p>We are a team of engineers dedicated to helping people making day-to-day decisions.
+              AskaStar was designed that anyone can use it and get answer to their questions from 
+              their favourite celebrities.
+              We would all like to know what our favourite star would do in our situation⭐</p>
+            </div>
+            <div class="col col-lg-3 content-center">
+              <button type="button" class="btn btn-secondary btn-lg text-center">Contact</button>
+            </div>
+          </div>
+      </section>
+    
+
+      <footer>
+        &copy; AskTate, 2023 All Rights Reserved
+      </footer>
+      <button id="back-to-top" class="back-to-top"> <b>↑</b></button>
+    <script src="{% static 'js/script_home.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
